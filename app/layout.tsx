@@ -1,5 +1,12 @@
 import './globals.css'
 import Nav from './auth/Nav'
+import { Roboto } from '@next/font/google'
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-roboto",
+})
 
 export default function RootLayout({
   children,
@@ -13,7 +20,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
+      <body >
         <Nav />
         {children}</body>
     </html>
