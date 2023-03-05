@@ -24,12 +24,14 @@ export default function Home() {
       <AddPost />
       {data?.map((post) =>
         <Post
+          comments={post.comments}
           key={post.id}
           name={post.user.name}
           avatar={post.user.image}
           postTitle={post.title}
           id={post.id}
         />
+
       )}
     </main>
   )
