@@ -4,7 +4,7 @@ import axios from 'axios'
 import AddPost from './components/AddPost'
 import { useQuery } from '@tanstack/react-query'
 import Post from './components/Post'
-import { PostType } from './types/Post'
+import { PostType } from './types/Posts'
 
 // Fetching all posts
 const allPosts = async () => {
